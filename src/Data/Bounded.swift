@@ -1,7 +1,7 @@
-// Data.Bounded
+public extension Data.Bounded {
+    public static let topInt = Int.max
+    public static let bottomInt = Int.min
 
-public let topInt = Int.max
-public let bottomInt = Int.min
-
-public let topChar: Character = "\u{65535}"
-public let bottomChar: Character = "\0"
+    public static let topChar: Character = "\u{65535}"
+    public static let bottomChar: Character = "\0"
+}
