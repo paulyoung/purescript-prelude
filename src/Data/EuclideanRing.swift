@@ -1,6 +1,10 @@
 public extension Data.EuclideanRing._Foreign {
     public static func intDegree(_ x: Int) -> Int {
-        return abs(x)
+        if (x == Int.min) {
+            return Int.max
+        } else {
+            return abs(x)
+        }
     }
 
     public static func intDiv(_ x: Int) -> (_ /* y */: Int) -> Int {
