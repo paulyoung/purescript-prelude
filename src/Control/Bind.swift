@@ -1,5 +1,5 @@
 public extension Control.Bind._Foreign {
-    public static func arrayBind<A, B>(arr: [A]) -> (_ /* f */: (A) -> [B]) -> [B] {
+    public static func arrayBind<A, B>(_ arr: [A]) -> (_ /* f */: (A) -> [B]) -> [B] {
         return { f in
             var result: [B] = []
             for x in arr {
